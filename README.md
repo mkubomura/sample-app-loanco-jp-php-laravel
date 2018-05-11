@@ -20,14 +20,22 @@ $ docker-compose exec workspace bash
 ```
 
 DocuSign SDKをインストール
-```/var/www# composer require docusign/esign-client  ```
+```
+/var/www# composer require docusign/esign-client  
+```
 
 DocuSign SDK for PHPがJWT認証サポートしていないので、HTTPクライアントを導入
-```/var/www# composer require guzzlehttp/guzzle ``` 
+```
+/var/www# composer require guzzlehttp/guzzle  
+``` 
 
 Firebase/php-jwtをインストール
-```/var/www# composer require firebase/php-jwt  ```
+```
+/var/www# composer require firebase/php-jwt  
+```
 
 起動
-```$ docker-compose up -d php-fpm nginx```
+```
+$ docker-compose up -d php-fpm nginx
+```
 
